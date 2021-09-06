@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SearchingInArray {
+
+
+    public static void main(String[] args) {
+        //  Searching for a value inside an array
+       int []array ={2,9,7,99,54,13};
+     Scanner input= new Scanner(System.in);
+    
+      int key=0;
+      while(0!=1){
+      
+          System.out.println("Enter Search Key: ");
+          key =input.nextInt();
+        
+        if(key==-1 || key >array.length){
+            break;
+              
+          }
+
+          System.out.println(array[key]);
+      }
+      }}

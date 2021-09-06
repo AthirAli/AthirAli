@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class SortingArray {
+    int[] array = {12, 0, 8, 3, 10,1};
+
+    public static void main(String[] args) {
+
+        SortingArray arraySort = new SortingArray();
+        arraySort.sort();
+        arraySort.printArray();
+    }
+
+    public void sort() {
+        for (int i = 0; i < array.length - 1; i++) {
+            int k = i + 1;
+            if (array[k] < array[i]) {
+                swap(i, k);
+            }
+        }
+    }
+
+    public void swap(int i, int k) {
+        int temp = array[i];
+        array[i] = array[k];
+        array[k] = temp;
+        sort();
+    }
+
+    public void printArray() {
+      for (int i = 0; i < array.length ; i++) {
+
+            System.out.print(array[i] + ",");
+
+    }
+    }
+
+}
